@@ -44,9 +44,21 @@ jest.mock("@/components/form/step-three-situation-description", () => ({
   ),
 }));
 
+// Define a type for steps
+type StepItem = {
+  id: number;
+  label: string;
+};
+
 // Mock the stepper component
 jest.mock("@/components/ui/stepper", () => ({
-  Stepper: ({ currentStep, steps }: { currentStep: number; steps: any[] }) => (
+  Stepper: ({
+    currentStep,
+    steps,
+  }: {
+    currentStep: number;
+    steps: StepItem[];
+  }) => (
     <div data-testid="stepper">
       {steps.map((step) => (
         <div key={step.id} className={currentStep === step.id ? "active" : ""}>
@@ -55,9 +67,7 @@ jest.mock("@/components/ui/stepper", () => ({
       ))}
     </div>
   ),
-  StepItem: ({ label, icon }: { label: string; icon: any }) => (
-    <div>{label}</div>
-  ),
+  StepItem: ({ label }: { label: string }) => <div>{label}</div>,
 }));
 
 // Mock local storage
