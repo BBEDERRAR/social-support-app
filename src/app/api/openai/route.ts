@@ -1,3 +1,4 @@
+import { FormData } from "@/lib/types";
 import { getLocale } from "next-intl/server";
 import { NextResponse } from "next/server";
 import OpenAI from "openai";
@@ -9,7 +10,7 @@ const openai = new OpenAI({
   apiKey: OPENAI_API_KEY,
 });
 
-function personalInfoToPrompt(personalInfo: any) {
+function personalInfoToPrompt(personalInfo: FormData) {
   if (!personalInfo) return "";
   return `
 Personal Information:
@@ -49,13 +50,13 @@ export async function POST(request: Request) {
     
     switch (field) {
       case "financialSituation":
-        prompt = `You are an AI assistant helping a citizen apply for government financial support. The user needs help describing their financial situation. Based on any information they've provided, suggest a detailed and clear description of their financial circumstances.\n\n${personalInfoPrompt}\nIf they've provided some details, enhance and structure it. If they haven't provided anything, create a generic but realistic financial hardship situation.\n\nCurrent input: "${currentValue || "No information provided"}"\n\nProvide a 150-200 word well-structured response that:\n- Describes current income sources\n- Mentions any recent financial challenges\n- Explains current expenses and debts\n- Indicates any financial assistance already received\n\nKeep the tone respectful and factual.\n\nThe response should be in ${locale} language.`;
+        prompt = `You are an AI assistant helping a UAE citizen apply for government financial support. The user needs help describing their financial situation. Based on any information they've provided, suggest a detailed and clear description of their financial circumstances.\n\n${personalInfoPrompt}\nIf they've provided some details, enhance and structure it. If they haven't provided anything, create a generic but realistic financial hardship situation.\n\nCurrent input: "${currentValue || "No information provided"}"\n\nProvide a 150-200 word well-structured response that:\n- Describes current income sources\n- Mentions any recent financial challenges\n- Explains current expenses and debts\n- Indicates any financial assistance already received\n\nKeep the tone respectful and factual.\n\nThe response should be in ${locale} language.`;
         break;
       case "employmentCircumstances":
-        prompt = `You are an AI assistant helping a citizen apply for government financial support. The user needs help describing their employment circumstances. Based on any information they've provided, suggest a detailed and clear description of their employment situation.\n\n${personalInfoPrompt}\nIf they've provided some details, enhance and structure it. If they haven't provided anything, create a generic but realistic employment hardship situation.\n\nCurrent input: "${currentValue || "No information provided"}"\n\nProvide a 150-200 word well-structured response that:\n- Describes current or most recent employment\n- Explains any job loss, reduction in hours, or employment challenges\n- Mentions skills and employment history briefly\n- Describes job search efforts if unemployed\n\nKeep the tone respectful and factual.\n\nThe response should be in ${locale} language.`;
+        prompt = `You are an AI assistant helping a UAE citizen apply for government financial support. The user needs help describing their employment circumstances. Based on any information they've provided, suggest a detailed and clear description of their employment situation.\n\n${personalInfoPrompt}\nIf they've provided some details, enhance and structure it. If they haven't provided anything, create a generic but realistic employment hardship situation.\n\nCurrent input: "${currentValue || "No information provided"}"\n\nProvide a 150-200 word well-structured response that:\n- Describes current or most recent employment\n- Explains any job loss, reduction in hours, or employment challenges\n- Mentions skills and employment history briefly\n- Describes job search efforts if unemployed\n\nKeep the tone respectful and factual.\n\nThe response should be in ${locale} language.`;
         break;
       case "reasonForApplying":
-        prompt = `You are an AI assistant helping a citizen apply for government financial support. The user needs help articulating their reasons for applying for financial assistance. Based on any information they've provided, suggest a detailed and clear explanation.\n\n${personalInfoPrompt}\nIf they've provided some details, enhance and structure it. If they haven't provided anything, create a generic but realistic explanation.\n\nCurrent input: "${currentValue || "No information provided"}"\n\nProvide a 150-200 word well-structured response that:\n- Clearly states the main reason for seeking assistance\n- Explains immediate financial needs\n- Mentions any temporary nature of the hardship\n- Describes how the assistance would help improve their situation\n\nKeep the tone respectful, factual, and avoid exaggeration.\n\nThe response should be in ${locale} language.`;
+        prompt = `You are an AI assistant helping a UAEcitizen apply for government financial support. The user needs help articulating their reasons for applying for financial assistance. Based on any information they've provided, suggest a detailed and clear explanation.\n\n${personalInfoPrompt}\nIf they've provided some details, enhance and structure it. If they haven't provided anything, create a generic but realistic explanation.\n\nCurrent input: "${currentValue || "No information provided"}"\n\nProvide a 150-200 word well-structured response that:\n- Clearly states the main reason for seeking assistance\n- Explains immediate financial needs\n- Mentions any temporary nature of the hardship\n- Describes how the assistance would help improve their situation\n\nKeep the tone respectful, factual, and avoid exaggeration.\n\nThe response should be in ${locale} language.`;
         break;
       default:
         return NextResponse.json(

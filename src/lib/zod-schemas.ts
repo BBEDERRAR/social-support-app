@@ -1,7 +1,8 @@
 import { z } from 'zod';
+import { useTranslations } from 'next-intl';
 
 // Personal Information Schema (Step 1)
-export const createPersonalInfoSchema = (t: any) => z.object({
+export const createPersonalInfoSchema = (t: ReturnType<typeof useTranslations>) => z.object({
   name: z.string().min(2, { message: t('validation.nameRequired') }),
   nationalId: z.string()
     .regex(/^\d{15}$/, { 
@@ -24,7 +25,7 @@ export const createPersonalInfoSchema = (t: any) => z.object({
 });
 
 // Family & Financial Information Schema (Step 2)
-export const createFamilyFinancialSchema = (t: any) => z.object({
+export const createFamilyFinancialSchema = (t: ReturnType<typeof useTranslations>) => z.object({
   maritalStatus: z.enum(['single', 'married', 'divorced'], {
     errorMap: () => ({ message: t('validation.maritalStatusRequired') })
   }),
@@ -39,14 +40,14 @@ export const createFamilyFinancialSchema = (t: any) => z.object({
 });
 
 // Situation Description Schema (Step 3)
-export const createSituationSchema = (t: any) => z.object({
+export const createSituationSchema = (t: ReturnType<typeof useTranslations>) => z.object({
   financialSituation: z.string().min(50, { message: t('validation.financialSituationRequired') }),
   employmentCircumstances: z.string().min(50, { message: t('validation.employmentCircumstancesRequired') }),
   reasonForApplying: z.string().min(50, { message: t('validation.reasonRequired') }),
 });
 
 // Combined schema for the entire form
-export const createApplicationSchema = (t: any) => z.object({
+export const createApplicationSchema = (t: ReturnType<typeof useTranslations>) => z.object({
   ...createPersonalInfoSchema(t).shape,
   ...createFamilyFinancialSchema(t).shape,
   ...createSituationSchema(t).shape,

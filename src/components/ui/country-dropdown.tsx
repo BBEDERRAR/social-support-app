@@ -40,7 +40,7 @@ const CountryDropdownComponent = (
 ) => {
   // Filter only countries with names, active status, and valid alpha3 codes
   const options = countries.all.filter(
-    (country: any) =>
+    (country: { name: string; status: string; alpha3: string }) =>
       country.name &&
       country.status !== "deleted" &&
       country.alpha3 &&
