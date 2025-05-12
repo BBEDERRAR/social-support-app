@@ -4,6 +4,128 @@
     },
     "Common": {
       "portalTitle": "Social Support Portal",
-      "selectLanguage": "Select Language"
+      "selectLanguage": "Select language"
+    },
+    "Home": {
+      "title": "Government Financial Assistance Application",
+      "description": "Apply for financial assistance through our online portal. Complete all required information to ensure your application is processed quickly."
+    },
+    "Form": {
+      "previous": "Previous",
+      "next": "Next",
+      "submit": "Submit Application",
+      "step": "Step",
+      "of": "of",
+      "PersonalInfo": {
+        "title": "Personal Information",
+        "description": "Please provide your basic personal details to help us identify you correctly.",
+        "name": "Full Name",
+        "nationalId": "National ID",
+        "dateOfBirth": "Date of Birth",
+        "selectDate": "Select date",
+        "gender": "Gender",
+        "selectGender": "Select gender",
+        "male": "Male",
+        "female": "Female",
+        "other": "Other",
+        "address": "Address",
+        "city": "City",
+        "selectEmirateCity": "Select Emirate",
+        "emirates": {
+          "abuDhabi": "Abu Dhabi",
+          "dubai": "Dubai",
+          "sharjah": "Sharjah",
+          "ajman": "Ajman",
+          "ummAlQuwain": "Umm Al Quwain",
+          "rasAlKhaimah": "Ras Al Khaimah",
+          "fujairah": "Fujairah"
+        },
+        "state": "State/Province",
+        "country": "Country",
+        "selectCountry": "Select country",
+        "selectCity": "Select city",
+        "phone": "Phone Number",
+        "email": "Email Address"
+      },
+      "FamilyFinancial": {
+        "title": "Family & Financial Information",
+        "description": "Please provide details about your family and financial situation.",
+        "maritalStatus": "Marital Status",
+        "selectMaritalStatus": "Select status",
+        "single": "Single",
+        "married": "Married",
+        "divorced": "Divorced",
+        "dependents": "Number of Dependents",
+        "employmentStatus": "Employment Status",
+        "selectEmploymentStatus": "Select status",
+        "employed": "Employed",
+        "unemployed": "Unemployed",
+        "selfEmployed": "Self-Employed",
+        "retired": "Retired",
+        "student": "Student",
+        "monthlyIncome": "Monthly Income",
+        "housingStatus": "Housing Status",
+        "selectHousingStatus": "Select status",
+        "owner": "Own Home",
+        "renting": "Renting",
+        "withFamily": "Living with Family",
+        "homeless": "No Permanent Housing",
+        "other": "Other"
+      },
+      "Situation": {
+        "title": "Your Situation",
+        "description": "Please provide details about your current situation and why you are applying for assistance.",
+        "financialSituation": "Financial Situation",
+        "financialSituationHelp": "Describe your current financial circumstances, including income, expenses, and any challenges.",
+        "financialSituationPlaceholder": "Describe your current financial situation...",
+        "employmentCircumstances": "Employment Circumstances",
+        "employmentCircumstancesHelp": "Explain your current employment status and any recent changes.",
+        "employmentCircumstancesPlaceholder": "Describe your employment situation...",
+        "reasonForApplying": "Reason for Applying",
+        "reasonForApplyingHelp": "Explain why you are applying for financial assistance and how it would help you.",
+        "reasonForApplyingPlaceholder": "Describe why you are applying for assistance..."
+      },
+      "stepper": {
+        "personalInfo": "Personal Info",
+        "familyFinancial": "Family & Financial",
+        "situation": "Situation"
+      }
+    },
+    "AI": {
+      "helpMeWrite": "Help me write",
+      "suggestionTitle": "AI Suggestion",
+      "suggestionDescription": "Review and edit the AI-generated text before accepting it.",
+      "suggestionPlaceholder": "AI suggestion is being generated...",
+      "accept": "Accept",
+      "discard": "Discard"
+    },
+    "Success": {
+      "title": "Application Submitted!",
+      "message": "Your application for financial assistance has been submitted successfully.",
+      "nextSteps": "Our team will review your application and contact you within 5-7 business days regarding the next steps.",
+      "referenceNumberLabel": "Your Application Reference Number",
+      "backToHome": "Back to Home"
+    },
+    "validation": {
+      "nameRequired": "Full name is required",
+      "nationalIdRequired": "National ID is required",
+      "nationalIdInvalid": "National ID should be 15 digits (no hyphens)",
+      "dobRequired": "Date of birth is required",
+      "dobInvalid": "Date of birth cannot be in the future",
+      "genderRequired": "Gender is required",
+      "addressRequired": "Address is required",
+      "cityRequired": "City is required",
+      "stateRequired": "State/Province is required",
+      "countryRequired": "Country is required",
+      "phoneRequired": "Phone number is required",
+      "emailInvalid": "Please enter a valid email address",
+      "maritalStatusRequired": "Marital status is required",
+      "dependentRequired": "Number of dependents is required",
+      "employmentStatusRequired": "Employment status is required",
+      "incomeRequired": "Monthly income is required",
+      "housingStatusRequired": "Housing status is required",
+      "financialSituationRequired": "Please provide at least 50 characters describing your financial situation",
+      "employmentCircumstancesRequired": "Please provide at least 50 characters describing your employment circumstances",
+      "reasonRequired": "Please provide at least 50 characters explaining why you are applying"
     }
   }

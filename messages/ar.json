@@ -5,6 +5,127 @@
     "Common": {
       "portalTitle": "بوابة الدعم الاجتماعي",
       "selectLanguage": "اختر اللغة"
+    },
+    "Home": {
+      "title": "طلب المساعدة المالية الحكومية",
+      "description": "تقدم بطلب للحصول على مساعدة مالية من خلال بوابتنا عبر الإنترنت. أكمل جميع المعلومات المطلوبة لضمان معالجة طلبك بسرعة."
+    },
+    "Form": {
+      "previous": "السابق",
+      "next": "التالي",
+      "submit": "تقديم الطلب",
+      "step": "الخطوة",
+      "of": "من",
+      "PersonalInfo": {
+        "title": "المعلومات الشخصية",
+        "description": "يرجى تقديم تفاصيلك الشخصية الأساسية لمساعدتنا في تحديد هويتك بشكل صحيح.",
+        "name": "الاسم الكامل",
+        "nationalId": "رقم الهوية الوطنية",
+        "dateOfBirth": "تاريخ الميلاد",
+        "selectDate": "اختر التاريخ",
+        "gender": "الجنس",
+        "selectGender": "اختر الجنس",
+        "selectCity": "اختر المدينة",
+        "male": "ذكر",
+        "female": "أنثى",
+        "other": "آخر",
+        "address": "العنوان",
+        "city": "المدينة",
+        "selectEmirateCity": "اختر الإمارة",
+        "emirates": {
+          "abuDhabi": "أبوظبي",
+          "dubai": "دبي",
+          "sharjah": "الشارقة",
+          "ajman": "عجمان",
+          "ummAlQuwain": "أم القيوين",
+          "rasAlKhaimah": "رأس الخيمة",
+          "fujairah": "الفجيرة"
+        },
+        "state": "المحافظة/المنطقة",
+        "country": "الدولة",
+        "selectCountry": "اختر الدولة",
+        "phone": "رقم الهاتف",
+        "email": "البريد الإلكتروني"
+      },
+      "FamilyFinancial": {
+        "title": "معلومات العائلة والمالية",
+        "description": "يرجى تقديم تفاصيل عن وضعك العائلي والمالي.",
+        "maritalStatus": "الحالة الاجتماعية",
+        "selectMaritalStatus": "اختر الحالة",
+        "single": "أعزب",
+        "married": "متزوج",
+        "divorced": "مطلق",
+        "dependents": "عدد المعالين",
+        "employmentStatus": "حالة التوظيف",
+        "selectEmploymentStatus": "اختر الحالة",
+        "employed": "موظف",
+        "unemployed": "عاطل عن العمل",
+        "selfEmployed": "عمل حر",
+        "retired": "متقاعد",
+        "student": "طالب",
+        "monthlyIncome": "الدخل الشهري",
+        "housingStatus": "حالة السكن",
+        "selectHousingStatus": "اختر الحالة",
+        "owner": "مالك للمنزل",
+        "renting": "مستأجر",
+        "withFamily": "يعيش مع العائلة",
+        "homeless": "بدون سكن دائم",
+        "other": "آخر"
+      },
+      "Situation": {
+        "title": "وضعك الحالي",
+        "description": "يرجى تقديم تفاصيل حول وضعك الحالي وسبب تقديمك لطلب المساعدة.",
+        "financialSituation": "الوضع المالي",
+        "financialSituationHelp": "صف ظروفك المالية الحالية، بما في ذلك مصادر الدخل والنفقات وأي تحديات.",
+        "financialSituationPlaceholder": "صف وضعك المالي الحالي...",
+        "employmentCircumstances": "ظروف العمل",
+        "employmentCircumstancesHelp": "اشرح وضع عملك الحالي وأي تغييرات حدثت مؤخرًا.",
+        "employmentCircumstancesPlaceholder": "صف وضع عملك...",
+        "reasonForApplying": "سبب تقديم الطلب",
+        "reasonForApplyingHelp": "اشرح سبب تقديمك لطلب المساعدة المالية وكيف ستساعدك.",
+        "reasonForApplyingPlaceholder": "صف سبب تقديمك لطلب المساعدة..."
+      },
+      "stepper": {
+        "personalInfo": "المعلومات الشخصية",
+        "familyFinancial": "العائلة والمالية",
+        "situation": "الوضع الحالي"
+      }
+    },
+    "AI": {
+      "helpMeWrite": "ساعدني في الكتابة",
+      "suggestionTitle": "اقتراح الذكاء الاصطناعي",
+      "suggestionDescription": "راجع وحرر النص الذي تم إنشاؤه بواسطة الذكاء الاصطناعي قبل قبوله.",
+      "suggestionPlaceholder": "جاري إنشاء اقتراح الذكاء الاصطناعي...",
+      "accept": "قبول",
+      "discard": "تجاهل"
+    },
+    "Success": {
+      "title": "تم تقديم الطلب!",
+      "message": "تم تقديم طلب المساعدة المالية الخاص بك بنجاح.",
+      "nextSteps": "سيقوم فريقنا بمراجعة طلبك والاتصال بك خلال 5-7 أيام عمل بخصوص الخطوات التالية.",
+      "referenceNumberLabel": "رقم مرجع طلبك",
+      "backToHome": "العودة إلى الصفحة الرئيسية"
+    },
+    "validation": {
+      "nameRequired": "الاسم الكامل مطلوب",
+      "nationalIdRequired": "رقم الهوية الوطنية مطلوب",
+      "nationalIdInvalid": "يجب أن يكون رقم الهوية 15 رقمًا (بدون شرطات)",
+      "dobRequired": "تاريخ الميلاد مطلوب",
+      "dobInvalid": "لا يمكن أن يكون تاريخ الميلاد في المستقبل",
+      "genderRequired": "الجنس مطلوب",
+      "addressRequired": "العنوان مطلوب",
+      "cityRequired": "المدينة مطلوبة",
+      "stateRequired": "المحافظة/المنطقة مطلوبة",
+      "countryRequired": "الدولة مطلوبة",
+      "phoneRequired": "رقم الهاتف مطلوب",
+      "emailInvalid": "يرجى إدخال عنوان بريد إلكتروني صالح",
+      "maritalStatusRequired": "الحالة الاجتماعية مطلوبة",
+      "dependentRequired": "عدد المعالين مطلوب",
+      "employmentStatusRequired": "حالة التوظيف مطلوبة",
+      "incomeRequired": "الدخل الشهري مطلوب",
+      "housingStatusRequired": "حالة السكن مطلوبة",
+      "financialSituationRequired": "يرجى تقديم 50 حرفًا على الأقل لوصف وضعك المالي",
+      "employmentCircumstancesRequired": "يرجى تقديم 50 حرفًا على الأقل لوصف ظروف عملك",
+      "reasonRequired": "يرجى تقديم 50 حرفًا على الأقل لشرح سبب تقديمك للطلب"
     }
-    
   }
