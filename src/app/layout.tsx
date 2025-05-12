@@ -36,7 +36,7 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="flex min-h-screen flex-col">
             <Header />
-            <main className="flex-1 container py-8">{children}</main>
+            <main>{children}</main>
           </div>
         </NextIntlClientProvider>
       </body>
