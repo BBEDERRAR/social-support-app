@@ -20,8 +20,11 @@
         "title": "المعلومات الشخصية",
         "description": "يرجى تقديم تفاصيلك الشخصية الأساسية لمساعدتنا في تحديد هويتك بشكل صحيح.",
         "name": "الاسم الكامل",
+        "namePlaceholder": "أدخل اسمك الكامل",
         "nationalId": "رقم الهوية الوطنية",
+        "nationalIdPlaceholder": "000-0000-0000000-0",
         "dateOfBirth": "تاريخ الميلاد",
+        "dateOfBirthPlaceholder": "YYYY-MM-DD",
         "selectDate": "اختر التاريخ",
         "gender": "الجنس",
         "selectGender": "اختر الجنس",
@@ -30,7 +33,9 @@
         "female": "أنثى",
         "other": "آخر",
         "address": "العنوان",
+        "addressPlaceholder": "أدخل عنوان الشارع",
         "city": "المدينة",
+        "cityPlaceholder": "أدخل مدينتك",
         "selectEmirateCity": "اختر الإمارة",
         "emirates": {
           "abuDhabi": "أبوظبي",
@@ -42,10 +47,13 @@
           "fujairah": "الفجيرة"
         },
         "state": "المحافظة/المنطقة",
+        "statePlaceholder": "أدخل محافظتك أو منطقتك",
         "country": "الدولة",
         "selectCountry": "اختر الدولة",
         "phone": "رقم الهاتف",
-        "email": "البريد الإلكتروني"
+        "phonePlaceholder": "أدخل رقم هاتفك",
+        "email": "البريد الإلكتروني",
+        "emailPlaceholder": "بريدك@مثال.كوم"
       },
       "FamilyFinancial": {
         "title": "معلومات العائلة والمالية",
@@ -56,6 +64,7 @@
         "married": "متزوج",
         "divorced": "مطلق",
         "dependents": "عدد المعالين",
+        "dependentsPlaceholder": "أدخل عدد المعالين",
         "employmentStatus": "حالة التوظيف",
         "selectEmploymentStatus": "اختر الحالة",
         "employed": "موظف",
@@ -64,6 +73,7 @@
         "retired": "متقاعد",
         "student": "طالب",
         "monthlyIncome": "الدخل الشهري",
+        "monthlyIncomePlaceholder": "أدخل دخلك الشهري",
         "housingStatus": "حالة السكن",
         "selectHousingStatus": "اختر الحالة",
         "owner": "مالك للمنزل",

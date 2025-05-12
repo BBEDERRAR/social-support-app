@@ -63,6 +63,7 @@ export function StepTwoFamilyFinancialInfo() {
                 <Input
                   type="number"
                   min="0"
+                  placeholder={t("dependentsPlaceholder")}
                   {...field}
                   onChange={(e) => field.onChange(Number(e.target.value))}
                 />
@@ -110,6 +111,7 @@ export function StepTwoFamilyFinancialInfo() {
                   type="number"
                   min="0"
                   step="0.01"
+                  placeholder={t("monthlyIncomePlaceholder")}
                   {...field}
                   onChange={(e) => field.onChange(Number(e.target.value))}
                 />

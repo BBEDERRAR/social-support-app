@@ -20,8 +20,11 @@
         "title": "Personal Information",
         "description": "Please provide your basic personal details to help us identify you correctly.",
         "name": "Full Name",
+        "namePlaceholder": "Enter your full name",
         "nationalId": "National ID",
+        "nationalIdPlaceholder": "000-0000-0000000-0",
         "dateOfBirth": "Date of Birth",
+        "dateOfBirthPlaceholder": "YYYY-MM-DD",
         "selectDate": "Select date",
         "gender": "Gender",
         "selectGender": "Select gender",
@@ -29,7 +32,9 @@
         "female": "Female",
         "other": "Other",
         "address": "Address",
+        "addressPlaceholder": "Enter your street address",
         "city": "City",
+        "cityPlaceholder": "Enter your city",
         "selectEmirateCity": "Select Emirate",
         "emirates": {
           "abuDhabi": "Abu Dhabi",
@@ -41,11 +46,14 @@
           "fujairah": "Fujairah"
         },
         "state": "State/Province",
+        "statePlaceholder": "Enter your state or province",
         "country": "Country",
         "selectCountry": "Select country",
         "selectCity": "Select city",
         "phone": "Phone Number",
-        "email": "Email Address"
+        "phonePlaceholder": "Enter your phone number",
+        "email": "Email Address",
+        "emailPlaceholder": "your.email@example.com"
       },
       "FamilyFinancial": {
         "title": "Family & Financial Information",
@@ -56,6 +64,7 @@
         "married": "Married",
         "divorced": "Divorced",
         "dependents": "Number of Dependents",
+        "dependentsPlaceholder": "Enter number of dependents",
         "employmentStatus": "Employment Status",
         "selectEmploymentStatus": "Select status",
         "employed": "Employed",
@@ -64,6 +73,7 @@
         "retired": "Retired",
         "student": "Student",
         "monthlyIncome": "Monthly Income",
+        "monthlyIncomePlaceholder": "Enter your monthly income",
         "housingStatus": "Housing Status",
         "selectHousingStatus": "Select status",
         "owner": "Own Home",

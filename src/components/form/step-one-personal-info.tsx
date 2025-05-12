@@ -49,7 +49,12 @@ export function StepOnePersonalInfo() {
             <FormItem>
               <FormLabel htmlFor="name">{t("name")}</FormLabel>
               <FormControl>
-                <Input id="name" {...field} aria-describedby="name-error" />
+                <Input
+                  id="name"
+                  {...field}
+                  aria-describedby="name-error"
+                  placeholder={t("namePlaceholder")}
+                />
               </FormControl>
               <FormMessage id="name-error" />
             </FormItem>
@@ -63,7 +68,7 @@ export function StepOnePersonalInfo() {
             <FormItem>
               <FormLabel>{t("nationalId")}</FormLabel>
               <FormControl>
-                <Input {...field} placeholder="000-0000-0000000-0" />
+                <Input {...field} placeholder={t("nationalIdPlaceholder")} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -80,7 +85,7 @@ export function StepOnePersonalInfo() {
                 <Input
                   id="dateOfBirth"
                   {...field}
-                  placeholder="000-0000-0000000-0"
+                  placeholder={t("dateOfBirthPlaceholder")}
                   type="date"
                 />
               </FormControl>
@@ -168,7 +173,7 @@ export function StepOnePersonalInfo() {
                 </Select>
               ) : (
                 <FormControl>
-                  <Input {...field} />
+                  <Input {...field} placeholder={t("statePlaceholder")} />
                 </FormControl>
               )}
 
@@ -184,7 +189,7 @@ export function StepOnePersonalInfo() {
             <FormItem>
               <FormLabel htmlFor="city">{t("city")}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input {...field} placeholder={t("cityPlaceholder")} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -198,7 +203,11 @@ export function StepOnePersonalInfo() {
             <FormItem>
               <FormLabel>{t("phone")}</FormLabel>
               <FormControl>
-                <Input {...field} type="tel" />
+                <Input
+                  {...field}
+                  type="tel"
+                  placeholder={t("phonePlaceholder")}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -212,7 +221,7 @@ export function StepOnePersonalInfo() {
             <FormItem className="md:col-span-2">
               <FormLabel>{t("address")}</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input {...field} placeholder={t("addressPlaceholder")} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -225,7 +234,11 @@ export function StepOnePersonalInfo() {
             <FormItem>
               <FormLabel>{t("email")}</FormLabel>
               <FormControl>
-                <Input {...field} type="email" />
+                <Input
+                  {...field}
+                  type="email"
+                  placeholder={t("emailPlaceholder")}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
